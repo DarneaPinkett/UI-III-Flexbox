@@ -65,9 +65,13 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+
 * {
-	width: 880px;
 	margin: 0 auto;
+}
+
+.container{
+	width: 880px;
 }
 
 .menu {
@@ -78,7 +82,7 @@ h1, h2, h3, h4, h5 {
 }
 
 nav {
-	width: 75%;
+	width: 100%;
 	display: flex;
 	flex-direction: row nowrap;
 	padding-top: 10px;
@@ -92,32 +96,40 @@ nav a {
 	padding: 0;
 }
 
-.services-header-img {
-	margin: 0 auto;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
 
 .box {
 	border: 1px solid black;
 	background-color: #f3f3f3;
 }
 
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.header, .container2 {
+	width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid black;
+	padding: 25px 0;
+}
+
 .main-content {
 	margin: 25px 0;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .main-content div {
-	width: 45%;
+	width: 48%;
 	height: 200px;
 	margin-bottom: 30px;
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 a {
@@ -167,6 +179,14 @@ section {
 	display: flex;
 }
 
+button {
+	padding: 15px 20px;
+	border-radius: 15px;
+	font-size: 15px;
+	width: 50%;
+	height: 30%;
+}
+
 .middle-img {
 	display: flex;
 	justify-content: center;
@@ -175,12 +195,26 @@ section {
 
 .bottom {
 	display: flex;
+	border-top: 2px solid black;
+	width: 100%;
+	justify-content: space-between;
+	padding-top: 20px;
 }
 
 .box1 {
 	display: flex;
 	width: 45%;
-	align-content: flex-start;
+	flex-direction: column;
+}
+
+.box1 p, .box1 ul {
+	margin-top: 10px;
+}
+
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
 }
 
 address {
@@ -190,7 +224,8 @@ address {
 }
 
 footer {
-	margin: 32px 0;
-	text-align: center;
 	font-size: 14px;
+	margin: 200px 0;
+	width: 100%;
+	text-align: center;
 }
