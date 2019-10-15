@@ -195,7 +195,6 @@ button {
 
 .bottom {
 	display: flex;
-	border-top: 2px solid black;
 	width: 100%;
 	justify-content: space-between;
 	padding-top: 20px;
