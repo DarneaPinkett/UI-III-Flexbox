@@ -158,7 +158,8 @@ h1 {
 #Title {
 	display: flex;
 	align-content: center;
-	justify-content: space-evenly;	
+	justify-content: space-evenly;
+	padding: 20px;	
 }
 
 h1{
@@ -166,7 +167,7 @@ h1{
 	justify-content: center;
 	margin: 50px;
 	padding: 50px;
-	font-size: 50px;
+	font-size: 60px;
 	text-align: center;
 }
 
@@ -191,14 +192,22 @@ button {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	padding: 20px;
+}
+
+.top {
+	padding: 20px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	border-top: 1px solid black;
 }
 
 .bottom {
 	display: flex;
-	border-top: 2px solid black;
 	width: 100%;
 	justify-content: space-between;
-	padding-top: 20px;
+	padding: 20px;
 }
 
 .box1 {
@@ -219,7 +228,8 @@ ul {
 
 address {
 	border-top: 2px solid black;
-	padding: 10px;
+	padding: 20px;
+	display: flex;
 
 }
 
